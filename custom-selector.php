@@ -1,6 +1,6 @@
 <?php
 /**
- * Adding a the product variation name
+ * Adding a product variation name
  *
  * @return void
  * @hook from woocommerce_before_single_product_summary
