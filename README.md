@@ -1,4 +1,4 @@
 # woocommerce-product-variation-selector
 Implementing a product variation selector for WooCommerce products.
 
-(Missing configuration for products' custom fields - will upload.)
+(*Todo*: Missing configuration for products' custom fields - will upload.)
