@@ -1,6 +1,6 @@
 <?php
 /**
- * Adding a product variation name
+ * Adding a product variation name - ag version 001
  *
  * @return void
  * @hook from woocommerce_before_single_product_summary
