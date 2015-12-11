@@ -33,14 +33,13 @@ function onireon_variation_selector() {
 	$default_selection = sprintf( '<option value="default" selected>%s</option>',
 									__( 'altre essenze', 'onireon_loc' ) );
 	$end_tag = '</select></label>';
-	$html_output = '';
-
-	foreach ($post_array as $post) {
-		$html_output .= sprintf('<option value="%s">%s</option>',
+	$html_output = array_reduce($post_array,
+	function ($html_output, $post) {
+		return $html_output .= sprintf('<option value="%s">%s</option>',
 				get_permalink( $post->ID ), $post->post_title );
-	}
+	}, '');
 
-	echo $start_tag, $default_selection, $html_output, $end_tag;
+	echo $start_tag, $default_selection, implde('', $html_output), $end_tag;
 }
 
 function onireon_variation_opening_tag() {
